@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Interface Grove Pi et GPIO</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+    <script type="text/javascript" src="{{url_for('static', filename='script_appli.js') }}"></script>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}" />
+  </head>
+  <body>
+    <header>
+      <h1>Interface Grove Pi et GPIO</h1>
+    </header>
+    <nav>
+      <ul>
+	<li><a href="donnees">Données</a></li>
+	<li><a href="controle">Contrôle</a></li>
+	<li><a href="streaming">Streaming vidéo</a></li>
+	<li><a href="applications">Applications</a<</li>
+	<li><a href="description">Description</a></li>
+      </ul>
+    </nav>
+    <section id="applications">
+      <p>Allumer la lumière lorsque la luminosité est inférieure à un seuil bas. L'éteindre à un seuil haut.</p>
+      <input id="SB" type="number" name="seuilBas" value="40">
+      <input id="SH" type="number" name="seuilHaut" value="60">
+      <div id="lumiere">Inactive</div>
+    </section>
+  </body>
+</html>

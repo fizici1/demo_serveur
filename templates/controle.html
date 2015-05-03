@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Interface Grove Pi et GPIO</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+    <script type=text/javascript src="{{url_for('static', filename='script_controle.js') }}"></script>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}" />
+  </head>
+  <body>
+    <header>
+      <h1>Interface Grove Pi et GPIO</h1>
+    </header>
+    <nav>
+      <ul>
+	<li><a href="donnees">Données</a></li>
+	<li><a href="controle">Contrôle</a></li>
+	<li><a href="streaming">Streaming vidéo</a></li>
+	<li><a href="applications">Applications</a></li>
+	<li><a href="description">Description</a></li>
+      </ul>
+    </nav>
+    <section id="controles">
+      <h2>Contrôle</h2>
+      <div id="lampe">Lampe</div>
+      <div><input id="servo" type="range" min="40" max="100" value="75"></div>
+      <div><input class="couleur" id="rouge" type="range" min="0" max="255" value="100"></div>
+      <div><input class="couleur" id="vert" type="range" min="0" max="255" value="100"></div>
+      <div><input class="couleur" id="bleu" type="range" min="0" max="255" value="100"></div>
+    </section>
+  </body>
+</html>

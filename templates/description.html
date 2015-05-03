@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Interface Grove Pi et GPIO</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+    <script type=text/javascript src="{{url_for('static', filename='script_controle.js') }}"></script>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}" />
+  </head>
+  <body>
+    <header>
+      <h1>Interface Grove Pi et GPIO</h1>
+    </header>
+    <nav>
+      <ul>
+	<li><a href="donnees">Données</a></li>
+	<li><a href="controle">Contrôle</a></li>
+	<li><a href="streaming">Streaming vidéo</a></li>
+	<li><a href="description">Description</a></li>
+      </ul>
+    </nav>
+    <section id="materiel">
+      <h2>Matériel</h2>
+      <p>Un microcontrôleur ATMEL communique avec le Raspberry Pi en série via un protocole I2C. C'est le microcontrôleur des Arduino, il permet une interface avec des capteurs numériques ou analogiques. Il est monté sur une carte munie de connecteurs Grove de Seeeduino qui propose une large gamme de capteurs compatibles. Le microcontrôleur compatible Arduino bénéficie de son environnement de développement et des nombreuses bibliothèques de fonctions disponibles.</p>
+    </section>
+    <section id="logiciel">
+      <h2>Logiciel</h2>
+      <p>Le contrôle et la récupération des données des capteurs se fait via une interface web. Le serveur est programmé en python avec le microframework Flask. Le rafraichissement des données des capteurs se fait grâce à un script jQuery qui effectue des requêtes à intervalles de temps réguliers. Le streaming vidéo se fait par Flask qui implémente cette fonctionnalité.</p>
+    </section>
+  </body>
+</html>

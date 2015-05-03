@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Interface Grove Pi et GPIO</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+    <script type="text/javascript" src="{{url_for('static', filename='script_donnees.js') }}"></script>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}" />
+  </head>
+  <body>
+    <header>
+      <h1>Interface Grove Pi et GPIO</h1>
+    </header>
+    <nav>
+      <ul>
+	<li><a href="donnees">Données</a></li>
+	<li><a href="controle">Contrôle</a></li>
+	<li><a href="streaming">Streaming vidéo</a></li>
+	<li><a href="applications">Applications</a<</li>
+	<li><a href="description">Description</a></li>
+      </ul>
+    </nav>
+    <section id="capteurs">
+      <h2>Données des capteurs :</h2>
+      <div id="temp">Température</div>
+      <div id="hum">Humidité</div>
+      <div id="lum">Luninosité</div>
+      <div id="slide">Potentiomètre</div>
+      <div id="pres">Pression</div>
+      <div id="US">Distance</div>
+      <div id="mouv">Mouvement</div>
+    </section>
+    <section id="logs">
+      <div id="log"></div>
+    </section>
+    <footer>
+    </footer>
+  </body>
+</html>

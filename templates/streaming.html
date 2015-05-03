@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Interface Grove Pi et GPIO</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+    <script type=text/javascript src="{{url_for('static', filename='script_controle.js') }}"></script>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}" />
+  </head>
+  <body>
+    <header>
+      <h1>Interface Grove Pi et GPIO</h1>
+    </header>
+    <nav>
+      <ul>
+	<li><a href="donnees">Données</a></li>
+	<li><a href="controle">Contrôle</a></li>
+	<li><a href="streaming">Streaming vidéo</a></li>
+	<li><a href="applications">Applications</a></li>
+	<li><a href="description">Description</a></li>
+      </ul>
+    </nav>
+    <img src="{{ url_for('video_feed') }}">
+  </body>
+</html>
